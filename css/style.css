@@ -253,3 +253,13 @@ div.container{margin-top: 20px; }
 div.container .row .col-md-2 { margin: 0 0px; position: relative; overflow: hidden;}
 div.container .row .col-md-2 img{width: 200px; height: auto; margin-bottom: 20px; }
 div.xiala{position: absolute; left: 15px; top: -100%; text-align: center; line-height: 130px; font-size: 30px; font-weight: bold; color: #fff; background: rgba(0,0,0,0.5); width: 200px; transition: top .6s linear; }
+@media only screen and (max-width:992px){
+	div.xiala{display: none;}
+	div.container .row .col-md-2 img{width: 300px; height: auto; margin-bottom: 20px; }
+
+}
+@media only screen and (max-width:768px){
+	div.xiala{display: none;}
+	div.container .row .col-md-2 img{width: 360px; height: auto; margin-bottom: 20px; }
+
+}
