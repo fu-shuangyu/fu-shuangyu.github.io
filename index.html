@@ -7,57 +7,7 @@
 <!-- <link type="text/css" href="css/humanity/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	 -->
 <link rel="Shortcut Icon" href="images/icon.png" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<script src="js/jquery-1.7.1.min.js"></script>
-<script src="js/superfish.js"></script>
-<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
-<script src="js/jquery.scrollorama.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/tms-0.4.1.js"></script>
-<script src="js/uCarousel.js"></script>
-<script src="js/forms.js"></script>
-<script src="js/jump.js"></script>
-<script src="js/index.js"></script>
-<script>
-	$(document).ready(function() {
-		$(".sf-menu li a,footer h1 a,.btn_down,.btn_up").click(function () { 
-		  elementClick = $(this).attr("href");
-		  destination = $(elementClick).offset().top;
-		  if($.browser.safari){
-			$('body').animate( { scrollTop: destination }, 2000, 'easeInQuad' );
-		  }else{
-			$('html').animate( { scrollTop: destination }, 2000, 'easeInQuad' );
-		  }
-		  return false;
-		});
-		$('.gallery')._TMS({
-			show:1,
-			pauseOnHover:true,
-			prevBu:'.prev',
-			nextBu:'.next',
-			playBu:false,
-			duration:1000,
-			preset:'fadeFromCenter',
-			pagination:$('.img-pags').uCarousel({show:3,shift:1,pageStep:1}),
-			pagNums:false,
-			slideshow:false,
-			numStatus:false,
-			banners:'fade',// fromLeft, fromRight, fromTop, fromBottom
-			waitBannerAnimation:false
-		})	
-		$('#contact-form').forms({
-			ownerEmail:'#'
-		})
-	});
-</script>
-<script type="text/javascript">
-$(function(){
-	 $(".box1 img").each(function(k,img){
-		new JumpObj(img,10);
-		//第一个参数代表元素对象
-		//第二个参数代表抖动幅度
-	});
-});
-</script>
+
 <!--[if lt IE 9]>
    <div style=' clear: both; text-align:center; position: relative;'>
      <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -388,5 +338,56 @@ $(function(){
 <p><a href="#">privacy@demolink.org</a></p>
 </div>
 <!-- Coded by Ariadna -->
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="js/jquery.scrollorama.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script src="js/uCarousel.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/jump.js"></script>
+<script src="js/index.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".sf-menu li a,footer h1 a,.btn_down,.btn_up").click(function () { 
+		  elementClick = $(this).attr("href");
+		  destination = $(elementClick).offset().top;
+		  if($.browser.safari){
+			$('body').animate( { scrollTop: destination }, 2000, 'easeInQuad' );
+		  }else{
+			$('html').animate( { scrollTop: destination }, 2000, 'easeInQuad' );
+		  }
+		  return false;
+		});
+		$('.gallery')._TMS({
+			show:1,
+			pauseOnHover:true,
+			prevBu:'.prev',
+			nextBu:'.next',
+			playBu:false,
+			duration:1000,
+			preset:'fadeFromCenter',
+			pagination:$('.img-pags').uCarousel({show:3,shift:1,pageStep:1}),
+			pagNums:false,
+			slideshow:false,
+			numStatus:false,
+			banners:'fade',// fromLeft, fromRight, fromTop, fromBottom
+			waitBannerAnimation:false
+		})	
+		$('#contact-form').forms({
+			ownerEmail:'#'
+		})
+	});
+</script>
+<script type="text/javascript">
+$(function(){
+	 $(".box1 img").each(function(k,img){
+		new JumpObj(img,10);
+		//第一个参数代表元素对象
+		//第二个参数代表抖动幅度
+	});
+});
+</script>
 </body>
 </html>
