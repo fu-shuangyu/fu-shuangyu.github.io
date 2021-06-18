@@ -1096,8 +1096,8 @@ div.container .row .col-md-2 {
 }
 
 div.container .row .col-md-2 img {
-	width: 200px;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	margin-bottom: 20px;
 }
 
@@ -1107,11 +1107,12 @@ div.xiala {
 	top: -100%;
 	text-align: center;
 	line-height: 130px;
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: bold;
 	color: #fff;
 	background: rgba(0, 0, 0, 0.5);
-	width: 200px;
+	width: 85%;
+	height: 85%;
 	transition: top .6s linear;
 }
 
